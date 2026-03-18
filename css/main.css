@@ -1,3 +1,53 @@
 @import "./reset.css";
 @import "./common.css";
 @import "./wiki-layout.css";
+
+/* Large responsive video for works section */
+.video-wrapper{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0.5rem auto;
+}
+.video-wrapper video{
+	width: 100%;
+	height: auto;
+	display: block;
+	background: #000;
+}
+
+/* Ensure work-card doesn't constrain video */
+.work-card .work-thumbnail{
+	padding: 0;
+}
+
+/* Link buttons (profile section) */
+.link-buttons{
+	margin-top: 0.75rem;
+	display: flex;
+	gap: 0.6rem;
+	flex-wrap: wrap;
+}
+.btn{
+	display: inline-block;
+	padding: 0.6rem 1rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 0.95rem;
+	line-height: 1;
+	transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+.btn:focus{outline: 3px solid rgba(37,99,235,0.12); outline-offset: 2px}
+.btn-primary{
+	background: #2563eb;
+	color: #fff;
+	border: 1px solid rgba(37,99,235,0.9);
+	box-shadow: 0 6px 20px rgba(37,99,235,0.12);
+}
+.btn-primary:hover{transform: translateY(-3px); box-shadow: 0 12px 30px rgba(37,99,235,0.14)}
+.btn-secondary{
+	background: transparent;
+	color: #111827;
+	border: 1px solid #e5e7eb;
+}
+.btn-secondary:hover{background: #f8fafc}
